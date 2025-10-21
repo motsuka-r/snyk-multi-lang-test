@@ -1,5 +1,6 @@
-Flask==0.10
-requests==2.3.0
-PyYAML==3.10
-Jinja2==2.7.2
-urllib3==1.21.1
+# snyk-pip-cve-test
+Flask==0.10                 # CVE-2018-1000656
+Jinja2==2.7.2               # CVE-2016-10745
+PyYAML==3.10                # CVE-2017-18342
+requests==2.3.0             # CVE-2018-18074
+urllib3==1.21.1             # CVE-2019-11324

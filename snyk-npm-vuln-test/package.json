@@ -1,16 +1,12 @@
 {
-  "name": "snyk-npm-vuln-test",
+  "name": "snyk-npm-cve-test",
   "version": "1.0.0",
-  "description": "Intentional vulnerable dependencies for Snyk scan demo",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "description": "npm CVE test project",
   "dependencies": {
     "lodash": "4.17.4",
     "minimist": "0.0.8",
-    "express": "3.0.0",
     "jquery": "2.1.4",
-    "debug": "2.6.8"
+    "debug": "2.6.8",
+    "express": "3.0.0"
   }
 }
