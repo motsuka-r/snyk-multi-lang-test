@@ -6,38 +6,43 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>snyk-maven-cve-test</artifactId>
+  <artifactId>snyk-maven-cve-test-alt</artifactId>
   <version>1.0.0</version>
 
   <dependencies>
+    <!-- Jackson Databind (historically many deserialization issues) -->
     <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-      <version>3.2.1</version>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.9.4</version>
     </dependency>
 
+    <!-- Apache Struts2 (old vulnerable versions exist) -->
     <dependency>
-      <groupId>commons-beanutils</groupId>
-      <artifactId>commons-beanutils</artifactId>
-      <version>1.9.2</version>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-core</artifactId>
+      <version>2.3.1</version>
     </dependency>
 
+    <!-- Commons Compress (older versions have had CVEs) -->
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.17</version>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>1.18</version>
     </dependency>
 
+    <!-- Logback classic (older versions sometimes flagged) -->
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.3.1</version>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.1.3</version>
     </dependency>
 
+    <!-- Example utility with past issues (replace by your choice) -->
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>4.1.0.RELEASE</version>
+      <groupId>org.owasp</groupId>
+      <artifactId>csrfguard</artifactId>
+      <version>2.0.2</version>
     </dependency>
   </dependencies>
 </project>
