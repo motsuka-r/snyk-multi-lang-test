@@ -7,6 +7,6 @@
     "minimist": "0.0.8",
     "jquery": "2.1.4",
     "debug": "2.6.8",
-    "express": "3.0.0"
+    "express": "4.22.0"
   }
 }
