@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "npm CVE test project",
   "dependencies": {
-    "lodash": "4.17.4",
+    "lodash": "4.17.23",
     "minimist": "0.0.8",
     "jquery": "2.1.4",
     "debug": "2.6.8",
